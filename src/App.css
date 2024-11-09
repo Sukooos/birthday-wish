@@ -28,6 +28,38 @@
   color: #61dafb;
 }
 
+body {
+  background-color: #ffe5ec;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.text-danger {
+  color: #ff6b81 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+.slider {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slider.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* App.css */
+.sticky-top {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
