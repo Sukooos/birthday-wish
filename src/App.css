@@ -58,6 +58,58 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Kolom otomatis berdasarkan ukuran gambar */
+  gap: 15px;
+  justify-content: center;
+}
+
+.photo-gallery img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.popup-photo {
+  width: 100%; /* Membuat foto agar mengisi lebar popup */
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+}
+/* Menambahkan styling untuk SweetAlert carousel */
+
+/* Styling untuk SweetAlert */
+.popup-width {
+  width: 80% !important;  /* Lebar default untuk desktop */
+  max-width: 800px;       /* Batas lebar maksimum */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Gambar di dalam carousel atau galeri */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsif: Membuat carousel lebih kecil pada perangkat mobile */
+@media (max-width: 768px) {
+  .popup-width {
+    width: 90% !important;  /* Lebar 90% pada tablet dan ponsel */
+  }
+}
+
+
+
+
+
 
 
 @keyframes App-logo-spin {

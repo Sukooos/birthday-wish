@@ -13,11 +13,11 @@ function App() {
           <Navbar.Brand href="/">Birthday Girl</Navbar.Brand>
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/photo">Memories</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
 
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/photo" element={<PhotoPage />} />
